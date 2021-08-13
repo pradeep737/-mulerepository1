@@ -29,8 +29,22 @@
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
+				<configuration>
+				        <cloudHubDeployment>
+				            <uri>https://anypoint.mulesoft.com</uri>
+				            <username>pradeep</username>
+				            <password>Pradeep@123</password>
+				            <environment>Sandbox</environment>
+				            <muleVersion>4.3.0</muleVersion>
+				            <workers>1</workers>
+				            <workerType>Micro</workerType>
+				            <applicationName>mulebuild</applicationName>
+				            <objectStoreV2>true</objectStoreV2>
+				         </cloudHubDeployment>
+				</configuration>
 			</plugin>
-		</plugins>
+				            
+	    </plugins>
 	</build>
 
 	<dependencies>
@@ -46,6 +60,13 @@
 			<version>1.2.1</version>
 			<classifier>mule-plugin</classifier>
 		</dependency>
+		<dependency>
+		    <groupId>org.sonarsource.scanner.maven</groupId>
+			<artifactId>sonar-maven-plugin</artifactId>
+			<version>3.6.1.1688</version>
+		</dependency>	
+		
+		
 	</dependencies>
 
 	<repositories>
