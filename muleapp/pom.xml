@@ -32,7 +32,7 @@
 				<configuration>
 				        <cloudHubDeployment>
 				            <uri>https://anypoint.mulesoft.com</uri>
-				            <username>pradeep</username>
+				            <username>pradeep15</username>
 				            <password>Pradeep@123</password>
 				            <environment>Sandbox</environment>
 				            <muleVersion>4.3.0</muleVersion>
